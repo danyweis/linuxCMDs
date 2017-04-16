@@ -1,0 +1,23 @@
+System program problem detected
+Do you want to report the problem now?
+
+first:
+sudo rm /var/crash/*
+
+After open file ==> /etc/default/apport:
+gksu gedit /etc/default/apport
+
+in the file:
+# set this to 0 to disable apport, or to 1 to enable it
+# you can temporarily override this with
+# sudo service apport start force_start=1
+enabled=1
+
+change enabled=1 to enabled=0:
+# set this to 0 to disable apport, or to 1 to enable it
+# you can temporarily override this with
+# sudo service apport start force_start=1
+enabled=0
+
+last step stop the still-running apport service:
+ sudo stop apport
