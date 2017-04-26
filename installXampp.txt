@@ -1,0 +1,55 @@
+télécharger XAMPP
+
+$ sudo chmod +x xampp-linux-x64-7.1.1-0-installer.run 
+
+$ sudo ./xampp-linux-x64-7.1.1-0-installer.run 
+
+Start Serveur
+$ sudo /opt/lampp/lampp start
+
+Stop Serveur
+$ sudo /opt/lampp/lampp stop
+
+sudo /opt/lampp/lampp security
+
+
+
+
+Securite:
+XAMPP: Your XAMPP pages are NOT secured by a password.
+XAMPP: Do you want to set a password? [yes]
+faire yes
+
+XAMPP: MySQL is accessable via network.
+XAMPP: Normaly that's not recommended. Do you want me to turn it off? [yes]
+faire yes
+
+XAMPP: The MySQL/phpMyAdmin user pma has no password set!!!
+XAMPP: Do you want to set a password? [yes]
+si c'est demander faire yes
+
+XAMPP: MySQL has no root passwort set!!!
+XAMPP: Do you want to set a password? [yes]
+faire yes
+
+Si avez déjà fait un peu de PHP et utilisé MySQL, le mot de passe demandé est celui que vous devez mettre à
+<?php mysql_connect('localhost', 'identifiant', 'mot_de_passe'); ?> 
+
+The FTP password is still set to ####.
+XAMPP: Do you want to change the password? [yes]
+
+
+donner toutes autorisation au dossier:
+chmod 777 /opt/lampp/htdocs/www
+
+
+
+créer une icon de lancement:
+utiliser menu editor
+aller dans programming 
+aller sur add launcher
+Nom: Xampp
+desous: Xampp Control Panel
+puis mettre l'icon
+Command: gksu /opt/lampp/manager-linux-x64.run
+et puis : save launcher
