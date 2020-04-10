@@ -114,3 +114,7 @@ espanso edit
 #after edit 
 espanso restart
 
+
+## To monitor bandwitdth usage
+sudo apt install vnstat
+
