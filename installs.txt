@@ -118,3 +118,5 @@ espanso restart
 ## To monitor bandwitdth usage
 sudo apt install vnstat
 
+## Bitwarden Password manager
+sudo snap install bitwarden
