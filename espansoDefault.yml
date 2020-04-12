@@ -1,0 +1,44 @@
+  GNU nano 2.9.3                                                             /home/danycode/.config/espanso/default.yml                                                             Modified  
+
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Dates
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  #console.log
+  - trigger: ":log"
+    replace: "console.log();"
+
+  #console.clear
+  - trigger: ":clear"
+    replace: "console.clear();"
+
+  #Start Sass
+  - trigger: ":startsass"
+    replace: "sass --watch sass/style.sass css/style.css"
+
+  #git Token
+  - trigger: ":gittoken"
+    replace: "ADD MY GIT TOKEN"
+
+  #email
+  - trigger: ":hotmail"
+    replace: "MY HOTMAIL"
+
+  #email Gmail
+  - trigger: ":gmail"
+    replace: "MY GMAIL"
+
