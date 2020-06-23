@@ -18,6 +18,16 @@ matches:
         params:
           format: "%m/%d/%Y"
 
+  ### JAVASCRIPT
+
+  #JavaScript
+  - trigger: ":JS"
+    replace: "Javascript"
+
+  #Vanilla JavaScript
+  - trigger: ":VJS"
+    replace: "Javascript"
+
   #console.log
   - trigger: ":log"
     replace: "console.log();"
@@ -26,9 +36,27 @@ matches:
   - trigger: ":clear"
     replace: "console.clear();"
 
+  ### HTML / CSS / SASS 
+
+  #Reset CSS
+  - trigger: ":resetcss"
+    replace: "* {\n
+              box-sizing: border-box;\n
+              margin: 0;\n
+              padding: 0;\n
+              }
+              "
+
   #Start Sass
   - trigger: ":startsass"
     replace: "sass --watch sass/style.sass css/style.css"
+
+    #Favicon
+  - trigger: ":favicon"
+    replace: "<link rel=\"shortcut icon\" href=\"/favicon.ico\" type=\"image/x-icon\">\n
+              <link rel=\"icon\" href=\"/favicon.ico\" type=\"image/x-icon\">"
+
+  ### ACCOUNTS
 
   #git Token
   - trigger: ":gittoken"
@@ -41,4 +69,30 @@ matches:
   #email Gmail
   - trigger: ":gmail"
     replace: "MY GMAIL"
+
+  
+  ### LINUX DEBIAN BASED 
+
+  #update system debian base
+  - trigger: ":update"
+    replace: "sudo apt-get update"
+
+  #upgrade system debian base
+  - trigger: ":upgrade"
+    replace: "sudo apt-get dist-upgrade"
+
+  ### TWITTER
+  
+  #oneDay
+  - trigger: ":oneDay"
+    replace: "#oneDayCodeEverydayLearnEveryday"
+
+  #TwitterHashTags
+  - trigger: ":hashtags"
+    replace: "#CodeNewbie #javascript #learntocode #programming #100daysofcode #coder #freeCodeCamp"
+
+  ### YOUTUBE
+
+  #YT Tags
+
 
