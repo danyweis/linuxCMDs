@@ -1,0 +1,20 @@
+{
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "eq-material-theme-icons-light",
+
+  "workbench.settings.openDefaultKeybindings": true,
+  "workbench.settings.openDefaultSettings": true,
+  // Controls the location of the sidebar and activity bar. They can either show on the left or right of the workbench.
+  "workbench.sideBar.location": "right",
+  // Limit the width of the minimap to render at most a certain number of columns.
+  "editor.minimap.maxColumn": 80,
+  // Controls how lines should wrap.
+  //  - off: Lines will never wrap.
+  //  - on: Lines will wrap at the viewport width.
+  //  - wordWrapColumn: Lines will wrap at `editor.wordWrapColumn`.
+  //  - bounded: Lines will wrap at the minimum of viewport and `editor.wordWrapColumn`.
+  "editor.wordWrap": "on"
+}
